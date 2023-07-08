@@ -1,0 +1,7 @@
+services:
+  dev:
+    image: python:3.11
+    tty: true
+    volumes:
+      - .:/src/aws-management:cached
+      - ${HOME}/.aws:/root/.aws:ro

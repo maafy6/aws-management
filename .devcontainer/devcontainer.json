@@ -1,0 +1,14 @@
+{
+    "name": "AWS Management Dev Container",
+    "dockerComposeFile": "../docker-compose.yaml",
+    "service": "dev",
+    "postCreateCommand": "pip install -U -r requirements-dev.txt",
+	"workspaceFolder": "/src/aws-management",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
